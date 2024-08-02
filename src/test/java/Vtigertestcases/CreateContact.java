@@ -2,9 +2,7 @@ package Vtigertestcases;
 
 import org.testng.annotations.Test;
 
-import Com.Crm.BaseClass.BaseClass;
-import Com.Crm.Pom.Contacts;
-import Com.Crm.Pom.Home;
+import com.crm.Baseclass.BaseClass;
 public class CreateContact extends BaseClass {
 
 	@Test
@@ -16,8 +14,8 @@ public class CreateContact extends BaseClass {
 		
 		Contacts c = new Contacts(driver);
 		c.plus();
-		c.firstName("Rutuja");
-		c.lastName("Pingle");
+		c.firstName("krutika");
+		c.lastName("chafale");
 		c.group();
 		c.startDate("2024-09-10");
 		c.endDate("2024-11-10");

@@ -11,15 +11,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import com.crm.POM.Login;
+import com.crm.FileUtility.JavaUtility;
+import com.crm.pom.Login;
 
+import baseclass.JavaUtiltity;
+
+//import com.crm.POM.Login;
+w 
 public class BaseClass {
 		
 		public static WebDriver driver;
 		
 		@BeforeClass
 		public void preCondition() throws IOException {
-			String browser=JavaUtility.getInputData("browser");
+			String browser= JavaUtility.getInputData("browser");
 			if (browser.equalsIgnoreCase("chrome")) {
 				driver = new ChromeDriver();
 			} else if (browser.equalsIgnoreCase("edge")) {

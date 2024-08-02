@@ -4,10 +4,11 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
-import Com.Crm.BaseClass.BaseClass;
-import Com.Crm.JavaUtility.JavaUtility;
+import com.crm.Baseclass.BaseClass;
+import com.crm.FileUtility.JavaUtility;
+import com.crm.pom.HomePage;
+
 import Com.Crm.Pom.Home;
-import Com.Crm.Pom.HomePage;
 
 public class CreateOrganization extends BaseClass { 
 		

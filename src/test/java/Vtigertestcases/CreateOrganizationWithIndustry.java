@@ -8,6 +8,7 @@ import Com.Crm.BaseClass.BaseClass;
 import Com.Crm.JavaUtility.JavaUtility;
 import Com.Crm.Pom.Home;
 import Com.Crm.Pom.HomePage;
+import baseclass.JavaUtiltity;
 
 public class CreateOrganizationWithIndustry extends BaseClass {
 
@@ -19,7 +20,7 @@ public class CreateOrganizationWithIndustry extends BaseClass {
 		
 		HomePage org = new HomePage(driver);
 		org.plusIcon();
-		org.organizationName("sriram laptops"+JavaUtility.generateRandomNumber());
+		org.organizationName("sriram laptops"+JavaUtiltity.generateRandomNumber());
 		org.selectIndustry("Technology");
 		org.group();
 		org.assignedto("Team Selling");
